@@ -1,0 +1,178 @@
+@font-face {
+  font-family: "Barlow Bold";
+  src: url("./fonts/Barlow-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Barlow Light";
+  src: url("./fonts/Barlow-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Barlow Medium";
+  src: url("./fonts/Barlow-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Barlow Regular";
+  src: url("./fonts/Barlow-Regular.ttf") format("truetype");
+}
+
+* {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Barlow Bold", Arial, sans-serif;
+  color: #000;
+}
+
+.sidebar {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  z-index: 100;
+  padding: 30px;
+}
+
+.content {
+  margin-left: 0;
+  padding: 20px;
+  font-family: "Barlow Light", Arial, Helvetica, sans-serif;
+}
+
+.home {
+  background-image: url("./img/bg.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.bg {
+  background-color: #ccd5df;
+  height: 100vh;
+}
+
+.content h1 {
+  color: #fff;
+}
+
+.centered-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.link {
+  color: #000;
+}
+
+.link:hover,
+.theme:hover {
+  color: #fff;
+}
+
+.theme {
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.about-title {
+  margin-top: 70px;
+  font-size: 5rem;
+}
+
+.text {
+  color: #000;
+  text-align: justify;
+  margin-top: 30px;
+}
+
+.profile-title {
+  color: #fff;
+  margin-top: 30px;
+}
+
+.profile-title h2 {
+  font-size: 1.3rem;
+}
+
+.role {
+  letter-spacing: 5px;
+  font-family: "Barlow Light", Arial, Helvetica, sans-serif;
+}
+
+.profileimg {
+  width: 200px;
+  height: 200px;
+  margin: 20px 0px;
+}
+
+.eventimg {
+  width: 20px;
+}
+
+.pcolor {
+  color: #000;
+}
+
+.eventdiv {
+  margin: 15px 20px;
+  padding: 5px;
+}
+
+.event {
+  padding: 5px;
+  margin: 15px 20px;
+}
+
+.bold {
+  font-family: "Barlow Medium", Arial, Helvetica, sans-serif;
+}
+
+.header {
+  font-size: 1.3rem;
+}
+
+.underline {
+  text-decoration: underline !important;
+}
+
+@media (min-width: 768px) {
+  .content {
+    margin-left: 0px;
+  }
+
+  .sidebar {
+    display: block !important;
+  }
+
+  .about-title  h2 {
+    font-size: 5rem;
+  }
+
+  .profile-title h2 {
+    font-size: 2rem;
+  }
+
+  .role,
+  .sectionhead {
+    font-size: 1.3rem;
+  }
+
+  /* .bio {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-gap: 10px;
+  } */
+
+  .col-lg-3 {
+    flex-basis: 20%;
+    max-width: 20%;
+  }
+}
